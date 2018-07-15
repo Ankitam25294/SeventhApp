@@ -1,0 +1,13 @@
+<div class="container well loginform">
+  <form >
+    <mat-form-field>
+      <input required matInput placeholder="Username" #username id="username" value="">
+      <mat-hint>Enter Your Username</mat-hint>
+    </mat-form-field><br>
+    <mat-form-field>
+        <input  required matInput type="password" placeholder="Password" #password id="password" value="">
+        <mat-hint>Enter Your Password</mat-hint>
+      </mat-form-field><br><br>
+      <button (click)="submitLogin(username.value,password.value)"mat-raised-button color="primary">Login</button>
+  </form>
+</div>

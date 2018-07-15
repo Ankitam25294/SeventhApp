@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="color:blue;text-align: center"><h1>Assignment 7 Question 3</h1></div>
+<div class="container submitform">
+    <div style="color:crimson;text-align: center"><h2>Car Details</h2></div>
+  <form action="" style="margin-left: 100px;">
+     
+    <mat-form-field>
+      <input matInput placeholder="Name" value="">
+      <mat-hint>Enter name of your car</mat-hint>
+    </mat-form-field><br><br>
+          
+    <mat-form-field>
+        <mat-select placeholder="Type of your car">
+          <mat-option *ngFor="let car of cartypes" [value]="car">
+              {{car}}
+          </mat-option>
+          </mat-select>
+        </mat-form-field><br><br>
+  
+        
+    <mat-form-field>
+      <input matInput placeholder="Color" value="">
+      <mat-hint>Enter color of your car</mat-hint>
+    </mat-form-field><br><br>
+    <mat-form-field>
+      <input matInput placeholder="Seat count" value="">
+      <mat-hint>Total No of seats</mat-hint>
+    </mat-form-field><br><br>
+  
+    <mat-form-field>
+      <input matInput placeholder="Car No." value="">
+      <mat-hint>Enter your car number</mat-hint>
+    </mat-form-field><br><br><br>
+      <button mat-raised-button style="margin-bottom: 50px;" color="primary">Submit</button>
+  </form>
+</div>

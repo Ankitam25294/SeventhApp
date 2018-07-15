@@ -1,0 +1,51 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="color:blue;text-align: center"><h1>Assignment 7 Question 2</h1></div>
+<div class="container well submitform">
+  <form action="">
+    <mat-form-field>
+      <input matInput placeholder="Name" value="">
+      <mat-hint>Enter your name</mat-hint>
+    </mat-form-field><br>
+          
+    <mat-form-field>
+        <mat-select placeholder="Country Name">
+          <mat-option *ngFor="let country of countries" [value]="country">
+              {{country}}
+          </mat-option>
+          </mat-select>
+        </mat-form-field><br>
+  
+        
+    <mat-form-field>
+      <input matInput placeholder="Adults" value="">
+      <mat-hint>Total no of adults</mat-hint>
+    </mat-form-field><br>
+    <mat-form-field>
+      <input matInput placeholder="Child" value="">
+      <mat-hint>Total no of child</mat-hint>
+    </mat-form-field><br>
+    <mat-form-field>
+        <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker1" placeholder="Arrival Date">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field><br>
+      <mat-form-field>
+        <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker2" placeholder="Departure Date">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field><br>
+      <mat-form-field>
+          <textarea matInput placeholder="Address"></textarea>
+        </mat-form-field><br>
+    
+    <mat-form-field>
+      <input matInput placeholder="Contact No." value="">
+      <mat-hint>Enter your contact number</mat-hint>
+    </mat-form-field><br>
+    <mat-form-field>
+      <input matInput placeholder="Email" value="">
+        <mat-hint>Enter your emailid</mat-hint>
+    </mat-form-field><br><br>
+      <button mat-raised-button color="primary">Submit</button>
+  </form>
+</div>
